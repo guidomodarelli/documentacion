@@ -3,7 +3,7 @@
 	strace
 	ltrace
 	strings
-	
+	binwalk
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMDMyNTYwNV19
+eyJoaXN0b3J5IjpbMTQ1MDY1NjEzNywtNTMwMzI1NjA1XX0=
 -->
