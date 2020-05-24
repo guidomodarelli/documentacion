@@ -51,5 +51,5 @@ Para encontrar mas Google Dorks puedes consultar las siguientes paginas:
 - [Google Hacking Database](https://www.exploit-db.com/google-hacking-database) (Recomendado)
 - [Sitio Frances con Dorks actualizados](https://korben.info/google-dorks-2019-liste.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU2MzgyMzNdfQ==
+eyJoaXN0b3J5IjpbLTEzNDgzODQ5NTMsODU2MzgyMzNdfQ==
 -->
