@@ -140,3 +140,6 @@ También tienen que crear una llave para su servidor “`ssh-keygen`”
 # Ignorar archivos
 
 “`.gitignore`” Es un archivo reservado de git que sirve para ignorar ciertos archivos.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIxMjgxMDQ0NjldfQ==
+-->
