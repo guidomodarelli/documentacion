@@ -38,6 +38,7 @@ Luego esta el tema de encontrar directorios interesantes en servidores gov en es
 ### Encontrando directorio sensibles usando el comando "`indexof`"
 
 `indexof:admin/ site:gob.ec`
+
 `indexof:users/ site:gob.ec`
 
 ### Usando el operador `OR` o " `|` " es usado para establecer mas comando en una sola linea.
