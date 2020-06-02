@@ -66,7 +66,8 @@ call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
 call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
 call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 ```
-## Pre-instalación
+## Plugins
+### Pre-instalación
 ```bash
 sudo apt-get install git
 
@@ -75,6 +76,7 @@ sudo apt-get install curl
 mkdir ~/.vim/bundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
+### Instalacion de plugins
 ---
 | Plugin | Commands |
 | ------ | -------- |
