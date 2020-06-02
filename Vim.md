@@ -76,6 +76,8 @@ sudo apt-get install curl
 mkdir ~/.vim/bundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
+En `.vimrc` poner `:PluginInstall`.
+
 ### Instalacion de plugins
 ---
 | Plugin | Commands |
