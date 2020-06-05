@@ -3,23 +3,56 @@
 ## .vimrc
 ```vim
 set nocompatible " be improved, required
-filetype off " required
+set nowrap
+set encoding=utf8
 " --------------------------------------------------------------
 " set the runtime path to include Vundle and initialize
+filetype off " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
 Plugin 'VundleVim/Vundle.vim'
+
+" Utility
+Bundle 'edkolev/tmuxline.vim'
+Plugin 'BufOnly.vim'
+Plugin 'Shougo/neocomplete.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'benmills/vimux'
 Plugin 'christoomey/vim-sort-motion'
 Plugin 'christoomey/vim-system-copy'
 Plugin 'christoomey/vim-titlecase'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'ervandew/supertab'
+Plugin 'gilsondev/searchtasks.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'junegunn/fzf'
+Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-dispatch'
+Plugin 'wesQ3/vim-windowswap'
+
+" Generic Programming Support
+Plugin 'honza/vim-snippets'
+Plugin 'Townk/vim-autoclose'
+Plugin 'tobyS/vmustache'
+Plugin 'janko-m/vim-test'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'neomake/neomake'
+Plugin 'maksimr/vim-jsbeautify'
+
+" Markdown / Writting
+Plugin 'reedes/vim-pencil'
+Plugin 'tpope/vim-markdown'
+Plugin 'jtratner/vim-flavored-markdown'
+Plugin 'LanguageTool'
+
+" Theme / Interface
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Bundle 'edkolev/tmuxline.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end() " required
@@ -41,9 +74,17 @@ set number
 set relativenumber
 set shiftwidth=2
 set tabstop=2
+set smarttab
+set expandtab
+set laststatus=2
+set cursorline
+if (has("termguicolors"))
+    set termguicolors
+endif
 syntax enable
 " --------------------------------------------------------------
 
+" autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
 " NERDTress File highlighting
