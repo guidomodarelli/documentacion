@@ -91,6 +91,7 @@ Plug 'christoomey/vim-system-copy'
 Plug 'Townk/vim-autoclose'
 Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --clang-completer --system-libclang --go-completer' }
 Plug 'scrooloose/nerdtree'
+Plug 'SirVer/ultisnips'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'pangloss/vim-javascript'    " JavaScript support
@@ -100,6 +101,11 @@ Plug 'vim-airline/vim-airline'
 call plug#end()
 let g:coc_global_extensions = [ 'coc-tsserver' ]
 
+let g:AutoClosePreserveDotReg = 0
+
+let g:UltiSnipsExpandTrigger="<c-s>" 
+let g:UltiSnipsJumpForwardTrigger="<c-j>" 
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 " --------------------------------------------------------------
 
 " autocmd vimenter * NERDTree
