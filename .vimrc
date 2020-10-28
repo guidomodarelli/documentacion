@@ -78,7 +78,8 @@ autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview"
 let mapleader = ","
 noremap <leader>w :w<cr>
-noremap <leader>gs :CocSearch
+noremap <leader>gs :CocSearch 
+noremap <leader>p :Prettier<cr> 
 noremap <leader>fs :Files<cr>
 noremap <leader><cr> <cr><c-w>h:q<cr>
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -89,6 +90,8 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'christoomey/vim-system-copy'
 Plug 'Townk/vim-autoclose'
+" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', {'do': 'npm install'}
 Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --clang-completer --system-libclang --go-completer' }
 Plug 'scrooloose/nerdtree'
 Plug 'SirVer/ultisnips'
@@ -106,6 +109,7 @@ let g:AutoClosePreserveDotReg = 0
 let g:UltiSnipsExpandTrigger="<c-s>" 
 let g:UltiSnipsJumpForwardTrigger="<c-j>" 
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
 " --------------------------------------------------------------
 
 " autocmd vimenter * NERDTree
