@@ -1,32 +1,27 @@
 {
-  "window.zoomLevel": 2,
-  "editor.fontSize": 16,
-  "editor.tabSize": 2,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  "editor.parameterHints.enabled": true,
+  "editor.suggestOnTriggerCharacters": true,
   "editor.renderWhitespace": "all",
-  "editor.fontFamily": "'Fira Code', 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.fontLigatures": true,
   "editor.suggestSelection": "first",
   "editor.wrappingIndent": "none",
-  "editor.minimap.enabled": false,
-  "explorer.confirmDragAndDrop": false,
-  "workbench.colorTheme": "Monokai",
-  "workbench.iconTheme": "vscode-icons",
   "breadcrumbs.enabled": true,
   "markdown.preview.openMarkdownLinks": "inEditor",
   "markdown-preview-enhanced.breakOnSingleNewLine": true,
-  "markdownlint.config": {
-    "MD033": false
-  },
+
   "prettier.singleQuote": true,
   "prettier.jsxSingleQuote": true,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "typescript.preferences.quoteStyle": "single",
-  "javascript.preferences.quoteStyle": "single",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  "emmet.triggerExpansionOnTab": true,
+  "javascript.autoClosingTags": true,
+  "javascript.suggest.enabled": true,
+  "javascript.suggest.paths": true,
+  "javascript.suggest.names": true,
+  "javascript.suggest.autoImports": true,
+  "javascript.suggestionActions.enabled": true,
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -53,5 +48,26 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
-  }
+  },
+  "workbench.preferredDarkColorTheme": "Monokai",
+  "workbench.preferredLightColorTheme": "Monokai",
+  // !important
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.preferences.quoteStyle": "single",
+  "markdownlint.config": {
+    "MD033": false
+  },
+  "editor.fontSize": 16,
+  "editor.tabSize": 2,
+  "editor.fontFamily": "'Fira Code', 'monospace', monospace, 'Droid Sans Fallback'",
+  "workbench.colorTheme": "Monokai",
+  "workbench.iconTheme": "vscode-icons",
+  "explorer.confirmDragAndDrop": false,
+  "window.zoomLevel": 2,
 }
