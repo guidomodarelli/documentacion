@@ -1,0 +1,17 @@
+{
+  "code_runner": "formulahendry.code-runner",
+  "es7_snippets": "dsznajder.es7-react-js-snippets",
+  "eslint": "dbaeumer.vscode-eslint",
+  "html_css_support": "ecmel.vscode-html-css",
+  "intellisense_css": "zignd.html-css-class-completion",
+  "es6_snippets": "xabikos.javascriptsnippets",
+  "live_server": "ms-vsliveshare.vsliveshare",
+  "markdown_all_in_one": "yzhang.markdown-all-in-one",
+  "markdown_preview": "shd101wyy.markdown-preview-enhanced",
+  "markdownlint": "davidanson.vscode-markdownlint",
+  "npm": "eg2.vscode-npm-script",
+  "prettier": "esbenp.prettier-vscode",
+  "vscode_icons": "vscode-icons-team.vscode-icons",
+  "xml_tools": "dotjoshjohnson.xml",
+  "byacc_syntax": "daohong-emilio.yash"
+}
