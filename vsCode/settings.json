@@ -12,8 +12,6 @@
   "editor.wrappingIndent": "none",
   "breadcrumbs.enabled": true,
   "markdown.preview.openMarkdownLinks": "inEditor",
-  "markdown-preview-enhanced.breakOnSingleNewLine": true,
-
   "prettier.singleQuote": true,
   "prettier.jsxSingleQuote": true,
   "javascript.autoClosingTags": true,
@@ -22,33 +20,14 @@
   "javascript.suggest.names": true,
   "javascript.suggest.autoImports": true,
   "javascript.suggestionActions.enabled": true,
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
   },
-  "[markdown]": {
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  "eslint.validate": ["javascript", "typescript"],
+  "eslint.options": {
+    "extensinons": [".ts", ".js", ".tsx", ".jsx"]
   },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "workbench.preferredDarkColorTheme": "Monokai",
   "workbench.preferredLightColorTheme": "Monokai",
   // !important
@@ -58,16 +37,81 @@
   "emmet.triggerExpansionOnTab": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.preferences.quoteStyle": "single",
-  "javascript.preferences.quoteStyle": "single",
-  "markdownlint.config": {
-    "MD033": false
-  },
-  "editor.fontSize": 16,
-  "editor.tabSize": 2,
-  "editor.fontFamily": "'Fira Code', 'monospace', monospace, 'Droid Sans Fallback'",
-  "workbench.colorTheme": "Monokai",
-  "workbench.iconTheme": "vscode-icons",
+  "typescript.preferences.quoteStyle": "double",
+  "javascript.preferences.quoteStyle": "double",
+  "editor.fontFamily": "'Victor Mono', monospace",
   "explorer.confirmDragAndDrop": false,
   "window.zoomLevel": 2,
+  "editor.tabSize": 2,
+  "extensions.ignoreRecommendations": true,
+  "todohighlight.isEnable": true,
+  "todohighlight.isCaseSensitive": true,
+  "todohighlight.keywords": [
+    "DEBUG:",
+    "REVIEW:",
+    {
+      "text": "NOTE:",
+      "color": "#ff0000",
+      "backgroundColor": "yellow",
+      "overviewRulerColor": "grey",
+      "isWholeLine": false
+    },
+    {
+      "text": "HACK:",
+      "color": "#000",
+      "isWholeLine": false
+    },
+    {
+      "text": "DELETE:",
+      "color": "#fff",
+      "backgroundColor": "red",
+      "isWholeLine": false
+    }
+  ],
+  // "todohighlight.keywordsPattern": "TODO:|FIXME:", //highlight `TODO:`,`FIXME:` or content between parentheses
+  "todohighlight.defaultStyle": {
+    "color": "red",
+    "backgroundColor": "#ffab00",
+    "overviewRulerColor": "#ffab00",
+    "cursor": "pointer",
+    // "border": "1px solid #eee",
+    "borderRadius": "2px",
+    "isWholeLine": false
+    //other styling properties goes here ...
+  },
+  "todohighlight.include": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.html",
+    "**/*.php",
+    "**/*.css",
+    "**/*.scss"
+  ],
+  "todohighlight.exclude": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/.vscode/**",
+    "**/.github/**",
+    "**/_output/**",
+    "**/*.min.*",
+    "**/*.map",
+    "**/.next/**"
+  ],
+  "todohighlight.maxFilesForSearch": 5120,
+  "todohighlight.toggleURI": false,
+  "workbench.colorTheme": "Monokai",
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.folders.theme": "specific",
+  "editor.find.cursorMoveOnType": false,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ]
 }
+
