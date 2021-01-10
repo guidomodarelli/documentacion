@@ -3,7 +3,7 @@
 ## 1.1. [Crear el container](https://hub.docker.com/_/postgres)
 
 ```sh
-sudo docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+sudo docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres -p 5432:5432
 ```
 
 ## 1.2. Ingresar
