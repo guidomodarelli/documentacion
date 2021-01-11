@@ -1,118 +1,117 @@
 {
-  "editor.quickSuggestions": {
-    "other": true,
-    "comments": false,
-    "strings": false
-  },
-  "editor.parameterHints.enabled": true,
-  "editor.suggestOnTriggerCharacters": true,
-  "editor.renderWhitespace": "all",
-  "editor.fontLigatures": true,
-  "editor.suggestSelection": "first",
-  "editor.wrappingIndent": "none",
-  "breadcrumbs.enabled": true,
-  "markdown.preview.openMarkdownLinks": "inEditor",
-  "prettier.singleQuote": true,
-  "prettier.jsxSingleQuote": true,
-  "javascript.autoClosingTags": true,
-  "javascript.suggest.enabled": true,
-  "javascript.suggest.paths": true,
-  "javascript.suggest.names": true,
-  "javascript.suggest.autoImports": true,
-  "javascript.suggestionActions.enabled": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "eslint.validate": ["javascript", "typescript"],
-  "eslint.options": {
-    "extensinons": [".ts", ".js", ".tsx", ".jsx"]
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "workbench.preferredDarkColorTheme": "Monokai",
-  "workbench.preferredLightColorTheme": "Monokai",
-  // !important
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  "emmet.triggerExpansionOnTab": true,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.preferences.quoteStyle": "double",
-  "javascript.preferences.quoteStyle": "double",
-  "editor.fontFamily": "'Victor Mono', monospace",
-  "explorer.confirmDragAndDrop": false,
-  "window.zoomLevel": 2,
-  "editor.tabSize": 2,
-  "extensions.ignoreRecommendations": true,
-  "todohighlight.isEnable": true,
-  "todohighlight.isCaseSensitive": true,
-  "todohighlight.keywords": [
-    "DEBUG:",
-    "REVIEW:",
-    {
-      "text": "NOTE:",
-      "color": "#ff0000",
-      "backgroundColor": "yellow",
-      "overviewRulerColor": "grey",
-      "isWholeLine": false
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": false
     },
-    {
-      "text": "HACK:",
-      "color": "#000",
-      "isWholeLine": false
+    "editor.parameterHints.enabled": true,
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.renderWhitespace": "all",
+    "editor.fontLigatures": true,
+    "editor.suggestSelection": "first",
+    "editor.wrappingIndent": "none",
+    "breadcrumbs.enabled": true,
+    "markdown.preview.openMarkdownLinks": "inEditor",
+    "prettier.singleQuote": true,
+    "prettier.jsxSingleQuote": true,
+    "javascript.autoClosingTags": true,
+    "javascript.suggest.enabled": true,
+    "javascript.suggest.paths": true,
+    "javascript.suggest.names": true,
+    "javascript.suggest.autoImports": true,
+    "javascript.suggestionActions.enabled": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
     },
-    {
-      "text": "DELETE:",
-      "color": "#fff",
-      "backgroundColor": "red",
+    "eslint.validate": ["javascript", "typescript"],
+    "eslint.options": {
+      "extensinons": [".ts", ".js", ".tsx", ".jsx"]
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "workbench.preferredDarkColorTheme": "Monokai",
+    "workbench.preferredLightColorTheme": "Monokai",
+    // !important
+    "emmet.includeLanguages": {
+      "javascript": "javascriptreact"
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.preferences.quoteStyle": "double",
+    "javascript.preferences.quoteStyle": "double",
+    "editor.fontFamily": "'Victor Mono', monospace",
+    "explorer.confirmDragAndDrop": false,
+    "window.zoomLevel": 1,
+    "editor.tabSize": 2,
+    "extensions.ignoreRecommendations": true,
+    "todohighlight.isEnable": true,
+    "todohighlight.isCaseSensitive": true,
+    "todohighlight.keywords": [
+      "DEBUG:",
+      "REVIEW:",
+      {
+        "text": "NOTE:",
+        "color": "#ff0000",
+        "backgroundColor": "yellow",
+        "overviewRulerColor": "grey",
+        "isWholeLine": false
+      },
+      {
+        "text": "HACK:",
+        "color": "#000",
+        "isWholeLine": false
+      },
+      {
+        "text": "DELETE:",
+        "color": "#fff",
+        "backgroundColor": "red",
+        "isWholeLine": false
+      }
+    ],
+    // "todohighlight.keywordsPattern": "TODO:|FIXME:", //highlight `TODO:`,`FIXME:` or content between parentheses
+    "todohighlight.defaultStyle": {
+      "color": "red",
+      "backgroundColor": "#ffab00",
+      "overviewRulerColor": "#ffab00",
+      "cursor": "pointer",
+      // "border": "1px solid #eee",
+      "borderRadius": "2px",
       "isWholeLine": false
-    }
-  ],
-  // "todohighlight.keywordsPattern": "TODO:|FIXME:", //highlight `TODO:`,`FIXME:` or content between parentheses
-  "todohighlight.defaultStyle": {
-    "color": "red",
-    "backgroundColor": "#ffab00",
-    "overviewRulerColor": "#ffab00",
-    "cursor": "pointer",
-    // "border": "1px solid #eee",
-    "borderRadius": "2px",
-    "isWholeLine": false
-    //other styling properties goes here ...
-  },
-  "todohighlight.include": [
-    "**/*.js",
-    "**/*.jsx",
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.html",
-    "**/*.php",
-    "**/*.css",
-    "**/*.scss"
-  ],
-  "todohighlight.exclude": [
-    "**/node_modules/**",
-    "**/bower_components/**",
-    "**/dist/**",
-    "**/build/**",
-    "**/.vscode/**",
-    "**/.github/**",
-    "**/_output/**",
-    "**/*.min.*",
-    "**/*.map",
-    "**/.next/**"
-  ],
-  "todohighlight.maxFilesForSearch": 5120,
-  "todohighlight.toggleURI": false,
-  "workbench.colorTheme": "Monokai",
-  "material-icon-theme.folders.theme": "specific",
-  "editor.find.cursorMoveOnType": false,
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.wordWrapColumn": 80
-}
-
+      //other styling properties goes here ...
+    },
+    "todohighlight.include": [
+      "**/*.js",
+      "**/*.jsx",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.html",
+      "**/*.php",
+      "**/*.css",
+      "**/*.scss"
+    ],
+    "todohighlight.exclude": [
+      "**/node_modules/**",
+      "**/bower_components/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/.vscode/**",
+      "**/.github/**",
+      "**/_output/**",
+      "**/*.min.*",
+      "**/*.map",
+      "**/.next/**"
+    ],
+    "todohighlight.maxFilesForSearch": 5120,
+    "todohighlight.toggleURI": false,
+    "workbench.colorTheme": "Monokai",
+    "editor.find.cursorMoveOnType": false,
+    "workbench.editorAssociations": [
+      {
+        "viewType": "jupyter.notebook.ipynb",
+        "filenamePattern": "*.ipynb"
+      }
+    ],
+    "editor.wordWrapColumn": 80,
+    "workbench.iconTheme": "vscode-icons"
+  }
+  
