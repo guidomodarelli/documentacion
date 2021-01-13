@@ -76,7 +76,7 @@ vnoremap <Space> zf
 " Automatically save and load folds
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview"
-let mapleader = ","
+let mapleader = " "
 noremap <leader>w :w<cr>
 noremap <leader>gs :CocSearch 
 noremap <leader>p :Prettier<cr> 
@@ -92,15 +92,34 @@ Plug 'christoomey/vim-system-copy'
 Plug 'Townk/vim-autoclose'
 " post install (yarn install | npm install) then load plugin only for editing supported files
 Plug 'prettier/vim-prettier', {'do': 'npm install'}
-Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --clang-completer --system-libclang --go-completer' }
+
+" syntax
+Plug 'sheerun/vim-polyglot'
+
+" Tree
 Plug 'scrooloose/nerdtree'
-Plug 'SirVer/ultisnips'
+
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'pangloss/vim-javascript'    " JavaScript support
 Plug 'leafgarland/typescript-vim' " TypeScript syntax
+
+" autocomplete
+Plug 'SirVer/ultisnips'
 Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
-Plug 'vim-airline/vim-airline'
+
+" status bar 
+Plug 'maximbaz/lightline-ale'
+Plug 'itchyny/lightline.vim'
+
+" Themes
+Plug 'morhetz/gruvbox'
+Plug 'shinchu/lightline-gruvbox.vim'
+
+" typing
+Plug 'jiangmiao/auto-pairs'
+Plug 'alvan/vim-closetag'
+Plug 'tpope/vim-surround'
 call plug#end()
 let g:coc_global_extensions = [ 'coc-tsserver' ]
 
@@ -135,7 +154,26 @@ call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
 call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
 call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
+" nerdtree
+let NERDTreeShowHidden=1
+let NERDTreeQuitOnOpen=1
+let NERDTreeAutoDeleteBuffer=1
+let NERDTreeMinimalUI=1
+let NERDTreeDirArrows=1
+let NERDTreeShowLineNumbers=1
+let NERDTreeMapOpenInTabs='\t'
+
 " --------------------------------------------------------------
+
+let g:javascript_plugin_flow=1
+
+" kite
+let g:kite_supported_languages=["javascript","python"]
+
+" coc
+autocmd FileType python let b:coc_suggest_disable=1
+autocmd FileType javascript let b:coc_suggest_disable=1
+autocmd FileType scss setl iskeyword+=@-@
 
 let g:airline_powerline_fonts = 1
 " GoTo code navigation.
@@ -143,3 +181,26 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+" maps
+nnoremap <leader>w :w<CR>
+nnoremap <leader>q :q<CR>
+
+" plugs
+map <leader>nt :NERDTreeFind<CR>
+map <leader>p :Files<CR>
+map <leader>ag :Ag<CR>
+
+" tabs navigation
+map <leader>h :tabprevious<CR>
+map <leader>l :tabnext<CR>
+
+" buffers
+map <leader>ob :Buffers<CR>
+
+" Use <c-space> to trigger completion
+if &filetype == "javascript" || &filetype == "python"
+  inoremap <c-space> <C-x><C-u>
+else
+  inoremap <silent><expr> <c-space> coc#refresh()
+endif
