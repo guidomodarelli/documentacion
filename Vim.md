@@ -62,7 +62,4 @@ cd ~/.vim/bundle
 git clone git://github.com/tpope/vim-bundler.git
 ```
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzOTc0MzMwOSwxOTk4ODU4MDQxLDIwOT
-E0NzM4MDQsNzMwOTk4MTE2XX0=
--->
+Instalar SnipMate para autocompletado de javascript: https://github.com/garbas/vim-snipmate#installing-snipmate
