@@ -26,6 +26,8 @@ En `.vimrc` poner `:PluginInstall`.
 | SORT-MOTION | gs        |
 | SYSTEM-COPY | cp        |
 
+System-copy: `apt-get install xsel`
+
 [Personalizar VIM e instalar el plugin de Go](https://platzi.com/tutoriales/1149-go-basico/1708-personalizar-vim-e-instalar-el-plugin-de-go/)
 
 SURROUND.VIM
