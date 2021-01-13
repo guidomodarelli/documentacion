@@ -105,8 +105,8 @@ Plug 'pangloss/vim-javascript'    " JavaScript support
 Plug 'leafgarland/typescript-vim' " TypeScript syntax
 
 " autocomplete
-Plug 'SirVer/ultisnips'
 Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
+Plug 'grvcoelho/vim-javascript-snippets'
 
 " status bar 
 Plug 'maximbaz/lightline-ale'
@@ -117,22 +117,34 @@ Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
 
 " typing
-Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 call plug#end()
+
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'ycm-core/YouCompleteMe'
+call vundle#end()            " required
+filetype plugin indent on 
+
 let g:coc_global_extensions = [ 'coc-tsserver' ]
 
 let g:AutoClosePreserveDotReg = 0
 
-let g:UltiSnipsExpandTrigger="<c-s>" 
-let g:UltiSnipsJumpForwardTrigger="<c-j>" 
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
-
 " --------------------------------------------------------------
 
 " autocmd vimenter * NERDTree
-map <C-n> :NERDTreeToggle<CR>
+map <leader>n :NERDTreeToggle<CR>
 
 " NERDTress File highlighting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
@@ -204,3 +216,5 @@ if &filetype == "javascript" || &filetype == "python"
 else
   inoremap <silent><expr> <c-space> coc#refresh()
 endif
+
+nmap <leader>a <Plug>(snipMateTrigger)
