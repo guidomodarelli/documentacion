@@ -47,37 +47,27 @@
     "todohighlight.isEnable": true,
     "todohighlight.isCaseSensitive": true,
     "todohighlight.keywords": [
-      "DEBUG",
-      "REVIEW",
+      "DEBUG:",
+      "REVIEW:",
       {
-        "text": "NOTE",
+        "text": "NOTE:",
         "color": "#ff0000",
         "backgroundColor": "yellow",
         "overviewRulerColor": "grey",
         "isWholeLine": false
       },
       {
-        "text": "HACK",
+        "text": "HACK:",
         "color": "#000",
         "isWholeLine": false
       },
       {
-        "text": "DELETE",
+        "text": "DELETE:",
         "color": "#fff",
         "backgroundColor": "red",
-      },
-      {
-        "text": "TODO",
-        "color": "#fff",
-        "backgroundColor": "#ffbd2a",
-      },
-      {
-        "text": "FIXME",
-        "color": "#fff",
-        "backgroundColor": "#f06292",
       }
     ],
-    // "todohighlight.keywordsPattern": "TODO|FIXME, //highlight `TODO`,`FIXME` or content between parentheses
+    // "todohighlight.keywordsPattern": "TODO:|FIXME:, //highlight `TODO:`,`FIXME:` or content between parentheses
     "todohighlight.defaultStyle": {
       "color": "red",
       "backgroundColor": "#ffab00",
