@@ -3,7 +3,7 @@
 ## 1.1. [Crear el container](https://hub.docker.com/_/postgres)
 
 ```sh
-sudo docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres -p 5432:5432
+sudo docker run --name <nombre> --env POSTGRES_PASSWORD=<password> --detach --publish 5432:5432 postgres
 ```
 
 ## 1.2. Ingresar
@@ -27,7 +27,7 @@ Valores por defecto:
 ## 1.4. Cargar archivos
 
 ```sh
-sudo docker exec -i some-postgres psql -U postgres postgres < 'file.sql'
+sudo docker exec -i <nombre_container> psql postgres -U postgres < 'file.sql'
 ```
 
 ## 1.5. [Ejecutar sin root](https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket)
