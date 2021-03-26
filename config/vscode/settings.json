@@ -71,7 +71,6 @@
         "backgroundColor": "#28B463",
       }
     ],
-    // "todohighlight.keywordsPattern": "TODO:|FIXME:, //highlight `TODO:`,`FIXME:` or content between parentheses
     "todohighlight.defaultStyle": {
       "color": "red",
       "backgroundColor": "#ffab00",
