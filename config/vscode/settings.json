@@ -30,7 +30,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "workbench.preferredDarkColorTheme": "Monokai",
     "workbench.preferredLightColorTheme": "Monokai",
-    // !important
     "emmet.includeLanguages": {
       "javascript": "javascriptreact"
     },
@@ -76,10 +75,8 @@
       "backgroundColor": "#ffab00",
       "overviewRulerColor": "#ffab00",
       "cursor": "pointer",
-      // "border": "1px solid #eee",
       "borderRadius": "2px",
       "isWholeLine": false
-      //other styling properties goes here ...
     },
     "todohighlight.include": [
       "**/*.js",
