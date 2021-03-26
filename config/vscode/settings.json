@@ -4,13 +4,13 @@
       "comments": false,
       "strings": false
     },
+    "editor.rulers": [ 80 ],
     "editor.parameterHints.enabled": true,
     "editor.suggestOnTriggerCharacters": true,
     "editor.renderWhitespace": "all",
     "editor.fontLigatures": true,
     "editor.suggestSelection": "first",
     "editor.wrappingIndent": "none",
-    "breadcrumbs.enabled": true,
     "markdown.preview.openMarkdownLinks": "inEditor",
     "prettier.singleQuote": true,
     "prettier.jsxSingleQuote": true,
@@ -39,9 +39,8 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "typescript.preferences.quoteStyle": "double",
     "javascript.preferences.quoteStyle": "double",
-    "editor.fontFamily": "'Victor Mono', monospace",
+    "editor.fontFamily": "'Victor Mono SemiBold', monospace",
     "explorer.confirmDragAndDrop": false,
-    "window.zoomLevel": 1,
     "editor.tabSize": 2,
     "extensions.ignoreRecommendations": true,
     "todohighlight.isEnable": true,
@@ -65,6 +64,11 @@
         "text": "DELETE:",
         "color": "#fff",
         "backgroundColor": "red",
+      },
+      {
+        "text": "DONE:",
+        "color": "#fff",
+        "backgroundColor": "#28B463",
       }
     ],
     // "todohighlight.keywordsPattern": "TODO:|FIXME:, //highlight `TODO:`,`FIXME:` or content between parentheses
@@ -86,6 +90,7 @@
       "**/*.html",
       "**/*.php",
       "**/*.css",
+      "**/*.sql",
       "**/*.scss"
     ],
     "todohighlight.exclude": [
@@ -111,6 +116,9 @@
       }
     ],
     "editor.wordWrapColumn": 80,
-    "workbench.iconTheme": "vscode-icons"
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.dontShowNewVersionMessage": true,
+    "window.zoomLevel": 2,
+    "editor.renderControlCharacters": true
   }
   
